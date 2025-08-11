@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>synbhwl</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+New:wght@400&display=swap">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 42rem;
+            word-wrap: break-word;
+            padding: 2rem;
+            margin: 1rem auto;
+            font-size: 0.95rem;
+        }
+        a {
+            color: #add8e6;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #add8e6;
+        }
+        a:hover{
+            color: #fff9c4
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" style="text-align: centre;">Loading...</div>
+    <div class="content" style="display:none">
+        <div class="links">
+            <a href="https://github.com/synbhwl">Github/</a>
+            <a href="https://twitter.com/synbhwl">Twitter/</a>
+            <a href="mailto:sayanbhowalcode@gmail.com">Email/</a>
+        </div>
+        {{content}}
+    </div>
+<script>
+    window.addEventListener('load', function(){
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    });
+</script>  
+</body>
+</html>
